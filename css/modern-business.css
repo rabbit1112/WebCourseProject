@@ -1,0 +1,70 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+#slides{
+	position: relative;
+	height: 150px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+/*幻燈秀*/
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	width: 100%;
+	height: 310%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 3;
+}
+
+.slide:nth-of-type(1){
+	background-image: url('../img/腳踏車.jpg');
+  border:10px #cccccc groove;
+}
+.slide:nth-of-type(2){
+	background-image: url('../img/首頁圖1.jpg');
+  border:10px #cccccc groove;
+}
+.slide:nth-of-type(3){
+	background-image: url('../img/首頁圖2.jpg');
+  border:10px #cccccc groove;
+}
